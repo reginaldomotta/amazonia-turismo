@@ -1,8 +1,12 @@
 {
   "name": "amazonia-turismo",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": {
+    "name": "Reginaldo Motta",
+    "email": "reginaldomcv@gmail.com",
+    "url": "https://reginaldomotta.github.io/contato"
+  },
+  "description": "Projeto de Estudo do curso de Ionic do IFES",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -60,6 +64,5 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "ts-node": "^8.3.0",
     "typescript": "~5.2.2"
-  },
-  "description": "An Ionic project"
+  }
 }
