@@ -1,0 +1,7 @@
+{
+  "name": "amazonia-turismo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
