@@ -1,17 +1,94 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="tertiary">
     <ion-title>
-      Tab 2
+      Folclore Amazônico
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://gazetadaamazonia.com.br/wp-content/uploads/2023/06/festival-de-parintins-1-696x464.jpg">
+        </ion-avatar>
+        <ion-label>
+          <ion-text>
+            <h2>
+              Festival de Parintins
+            </h2>
+          </ion-text>
+          <p>
+            Parintins
+          </p>
+        </ion-label>
+        <ion-note slot="end">AM</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="openSite('https://www.parintins2023.am.gov.br/pt/inicio/')" color="danger">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+        <ion-item-option (click)="like('bottom')">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://www.falandodeviagem.com.br/imagens21/FestivalCaire7.jpg">
+        </ion-avatar>
+        <ion-label>
+          <ion-text>
+            <h2>
+              Festival do Çairé
+            </h2>
+          </ion-text>
+          <p>
+            Santarém
+          </p>
+        </ion-label>
+        <ion-note slot="end">PA</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="openSite('https://vemparaalter.com.br/blog/festival-do-caire/')" color="danger">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+        <ion-item-option (click)="like('bottom')">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://s2-g1.glbimg.com/YCgXTGW7Fj3GVBaf5hwSxnjeZdY=/0x0:960x720/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/F/s/fUb9A7RJm3mg4ItK0dtg/46446979-1086241364889469-3478659291961884672-n.jpg">
+        </ion-avatar>
+        <ion-label>
+          <ion-text>
+            <h2>
+              Festival de Caracaraí
+            </h2>
+          </ion-text>
+          <p>
+            Caracaraí
+          </p>
+        </ion-label>
+        <ion-note slot="end">RR</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="openSite('https://g1.globo.com/rr/roraima/noticia/2019/11/14/gaviao-caracara-e-cobra-mariana-disputam-10a-edicao-do-festival-folclorico-de-caracarai-sul-de-rr.ghtml')" color="danger">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+        <ion-item-option (click)="like('bottom')">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
 </ion-content>
